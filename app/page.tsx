@@ -33,7 +33,7 @@ export default function Home() {
         </Input>
         
         <Link
-                href={isValidNumber(phoneNumber) ? `https://wa.me/+972${phoneNumber}/?text=urlencodedtext`: {}}
+                href={isValidNumber(phoneNumber) ? `https://wa.me/+972${phoneNumber}`: {}}
                 className='ml-3'
         >
           
