@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useRouter } from "next/navigation";
 import WhatsappIcon from "../public/whatsapp-social-media-svgrepo-com.svg";
 import { ClipboardPasteIcon } from "lucide-react";
 import { useState } from "react";
@@ -11,7 +10,6 @@ import Link from "next/link";
 export default function Home() {
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const router = useRouter();
   const formatNumber = (number: String) => {
     const whitespaceRemoved = number.replace(/\-/g, "");
     return whitespaceRemoved;
@@ -35,7 +33,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="flex">
-      <Button className="bg-white" onClick={() => pastePhoneNumber()}>
+      <Button className="bg-white hover:bg-white" onClick={() => pastePhoneNumber()}>
         <ClipboardPasteIcon color="black"/>
           </Button>
         <Input
