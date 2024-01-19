@@ -44,7 +44,7 @@ export default function Home() {
 
         <Link
           href={
-            isValidNumber(phoneNumber) ? `https://wa.me/+972${formatNumber(phoneNumber)}` : {}
+            isValidNumber(phoneNumber) ? `https://wa.me/972${formatNumber(phoneNumber)}` : {}
           }
           className="ml-3"
         >
